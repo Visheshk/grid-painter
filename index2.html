@@ -90,15 +90,28 @@
 		updateColor();
 		
 		//draw current color square
+		var dirpt = new Point(0,0);
+		if(dir == 1){
+			dirpt -= new Point(0,200);
+		}
+		else if(dir == 1){
+			dirpt -= new Point(0,200);
+		}
+		else if(dir == 1){
+			dirpt -= new Point(0,200);
+		}
+		else if(dir == 1){
+			dirpt -= new Point(0,200);
+		}
 		
-		var centsquare = new Path.Rectangle(centre, new Size(200, 200));
+		var centsquare = new Path.Rectangle(centre - (new Point()), new Size(200, 200));
 		centsquare.strokeColor = 'black';
 		centsquare.fillColor = colors[currentColor];
 
 		//draw neighbouring squares' halves
-		for(var i = 1; i <= 4; i++){
-			drawNeighbor(i);
-		}
+		//for(var i = 1; i <= 4; i++){
+		//	drawNeighbor(i);
+		//}
 
 		paintBox();
 	}
@@ -137,7 +150,7 @@
 	}*/
 
 	currentpos[0] = currentpos[0] + 1;
-	moveDir(1);
+	//moveDir(1);
 	function onKeyDown(event) {
 		if(event.key == 'd'){
 			canvas.visible = false;
