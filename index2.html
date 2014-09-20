@@ -188,11 +188,7 @@
 		}
 
 		else if(event.key == 'z'){
-			drawcanv[currentpos[0]][currentpos[1]] = 0;
-			var centsquare = new Path.Rectangle(centre, new Size(200, 200));
-			centsquare.strokeColor = 'black';
-			centsquare.fillColor = 'white';
-
+			
 		}
 
 		else if(event.key == 'p'){
@@ -212,8 +208,7 @@
 <p>
 Press w-a-s-d to move to a new square. A random color is shown to you and printed on the box. <br />You can see the colors of the neighboring squares around that square. <br />
 Press p to see the 'painting' you have created by moving the squares around. <br />
-Resume pressing w-a-s-d to return to painting.<br />
-Pressing z whitens current block. Functionality provided on special request.
+Resume pressing w-a-s-d to return to painting.
     <canvas id="canvas" resize stats></canvas>
 </body>
 </html>
